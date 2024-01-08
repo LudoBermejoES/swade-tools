@@ -90,7 +90,7 @@ export default class ItemDialog {
     
     }
 
-    showDialog(){
+    async showDialog(){
         
       //  let actor=this.sheet.actor;
         this.item = await game.swade.itemsInHands?.verify(this.actor, this.item);
