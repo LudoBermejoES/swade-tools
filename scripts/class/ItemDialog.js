@@ -93,7 +93,7 @@ export default class ItemDialog {
     showDialog(){
         
       //  let actor=this.sheet.actor;
-        let item=this.item;
+        this.item = await game.swade.itemsInHands?.verify(this.actor, this.item);
         let weaponinfo=item.system;
         let weaponactions=item.system.actions;
         let showDamage=true;
